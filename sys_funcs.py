@@ -1,7 +1,7 @@
 # This is a module of py functions being used by 
 from pathlib import Path
 import csv
-import sys_funcs
+# import sys_funcs
 from pathlib import Path
 import csv
 import pandas as pd
@@ -182,7 +182,7 @@ def transpose_csv_to_col_dict(csv_rows):
 
 # =========================================================
 # step 1 for sliders ✅ Final Pattern: Interactive Form + Pickle-Based Retrieval
-import ipywidgets as widgets
+# import ipywidgets as widgets
 from IPython.display import display, clear_output
 import pickle
 
