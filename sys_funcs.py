@@ -227,7 +227,7 @@ def universal_import(folder_path, pattern="*", expected_columns=None, df_name=No
                 if f.suffix in ['.xlsx', '.xls']:
                     df = pd.read_excel(f)
                 else:
-                    df = pd.read_csv(f, encoding=encoding, sep=None, engine='python')
+                    df = pd.read_csv(f, encoding=encoding, sep=",", engine="c")
                 
                 if expected_columns and df.shape[1] != expected_columns:
                     if verbose:
